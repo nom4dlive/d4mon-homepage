@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato &amp; Booking — D4MON | Invocar a Entidade</title>
+  <meta name="theme-color" content="#0c0908" />
+  <meta name="description" content="Agendamento de apresentações, festivais, colaborações e press kit oficial do projeto D4MON." />
+  <meta property="og:title" content="Contato &amp; Booking — D4MON" />
+  <meta property="og:description" content="Agendamento de apresentações e festivais para D4MON." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/ritual-smoke.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;family=Tektur:wght@500;700;900&amp;display=swap" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="grain text-bone bg-void">
+
+  <!-- Header -->
+  <header class="fixed inset-x-0 top-0 z-40 transition-colors duration-500 bg-void/80 backdrop-blur-md border-b border-soot/40">
+    <div class="mx-auto flex max-w-[1500px] items-center justify-between px-5 py-4 md:px-10">
+      <a aria-label="D4MON — home" class="block" href="/">
+        <img src="img/logo-flame.webp" alt="D4MON" width="160" height="50" class="h-9 w-auto md:h-10" />
+      </a>
+      
+      <!-- Primary Desktop Nav -->
+      <nav class="hidden items-center gap-7 lg:gap-9 md:flex" aria-label="Primary">
+        <a class="group label !text-bone/80 hover:!text-ember transition-colors" href="/gallery">
+          <span class="mr-1.5 text-ember/60 group-hover:text-ember">01</span><span data-i18n="nav.gallery">Galeria</span>
+        </a>
+        <a class="group label !text-bone/80 hover:!text-ember transition-colors" href="/projects">
+          <span class="mr-1.5 text-ember/60 group-hover:text-ember">02</span><span data-i18n="nav.rituals">Rituais</span>
+        </a>
+        <a class="group label !text-bone/80 hover:!text-ember transition-colors" href="/about">
+          <span class="mr-1.5 text-ember/60 group-hover:text-ember">03</span><span data-i18n="nav.about">Sobre</span>
+        </a>
+        <a class="group label !text-ember transition-colors active" href="/contact" aria-current="page">
+          <span class="mr-1.5 text-ember">04</span><span data-i18n="nav.contact">Contato</span>
+        </a>
+
+        <!-- Language Switcher Toggle -->
+        <div class="flex items-center gap-1 bg-ash/70 p-1 border border-char" role="group" aria-label="Language selection">
+          <button type="button" class="lang-btn btn !py-1 !px-2.5 text-xs font-mono btn-ember" data-lang="pt" aria-pressed="true">PT</button>
+          <button type="button" class="lang-btn btn !py-1 !px-2.5 text-xs font-mono btn-ghost" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <a class="btn btn-ember !py-2.5 !px-5 active" href="/contact" data-i18n="nav.bookBtn">Invocar D4MON</a>
+      </nav>
+
+      <!-- Mobile Button -->
+      <div class="flex items-center gap-3 md:hidden">
+        <div class="flex items-center gap-1 bg-ash p-1 border border-char">
+          <button type="button" class="lang-btn btn !py-1 !px-2 text-xs font-mono btn-ember" data-lang="pt">PT</button>
+          <button type="button" class="lang-btn btn !py-1 !px-2 text-xs font-mono btn-ghost" data-lang="en">EN</button>
+        </div>
+        <button id="mobile-menu-btn" type="button" class="grid size-10 place-items-center text-bone" aria-expanded="false" aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobile-nav" class="hidden md:hidden border-b border-soot bg-void/95 px-5 py-6 space-y-4">
+      <a class="block label text-lg" href="/gallery"><span class="text-ember mr-2">01</span><span data-i18n="nav.gallery">Galeria</span></a>
+      <a class="block label text-lg" href="/projects"><span class="text-ember mr-2">02</span><span data-i18n="nav.rituals">Rituais</span></a>
+      <a class="block label text-lg" href="/about"><span class="text-ember mr-2">03</span><span data-i18n="nav.about">Sobre</span></a>
+      <a class="block label text-lg text-ember" href="/contact"><span class="text-ember mr-2">04</span><span data-i18n="nav.contact">Contato</span></a>
+      <a class="btn btn-ember w-full justify-center !py-3" href="/contact" data-i18n="nav.bookBtn">Invocar D4MON</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="mx-auto max-w-[1500px] px-5 pt-36 md:px-10 md:pt-44">
+      <div class="grid gap-16 md:grid-cols-12">
+        <!-- Info Column -->
+        <div class="md:col-span-5">
+          <p class="label mb-6 animate-rise"><span class="text-ember">04</span> — <span data-i18n="contactPage.tag">Contato &amp; Booking</span></p>
+          <h1 class="display text-[18vw] animate-rise [animation-delay:100ms] md:text-[8.5rem]">
+            <span data-i18n="contactPage.headline">Invocar</span><br /><span class="text-ember" data-i18n="contactPage.headlineAccent">D4MON</span>
+          </h1>
+          <p class="mt-6 max-w-sm text-2xl italic text-smoke animate-rise [animation-delay:200ms]" data-i18n="contactPage.sub">
+            Festivais, noites de clube, colaborações e imprensa. Quanto mais escura a pista, melhor.
+          </p>
+
+          <!-- Social Direct Links -->
+          <ul class="mt-14 border-t border-soot animate-rise [animation-delay:300ms]">
+            <li class="border-b border-soot">
+              <a href="https://instagram.com/d4mond4rk" target="_blank" rel="noreferrer" class="group flex items-center justify-between gap-4 py-6 transition-colors hover:bg-ash md:px-3">
+                <span>
+                  <span class="label mr-4 !text-ember">01</span>
+                  <span class="display text-4xl transition-colors group-hover:text-ember md:text-5xl">Instagram</span>
+                  <span class="mt-1 block pl-10 font-mono text-sm text-smoke">@d4mond4rk</span>
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right size-9 shrink-0 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-ember"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+              </a>
+            </li>
+            <li class="border-b border-soot">
+              <a href="https://linktr.ee/d4mond4rk" target="_blank" rel="noreferrer" class="group flex items-center justify-between gap-4 py-6 transition-colors hover:bg-ash md:px-3">
+                <span>
+                  <span class="label mr-4 !text-ember">02</span>
+                  <span class="display text-4xl transition-colors group-hover:text-ember md:text-5xl">Linktree</span>
+                  <span class="mt-1 block pl-10 font-mono text-sm text-smoke">linktr.ee/d4mond4rk</span>
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right size-9 shrink-0 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-ember"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Unified Official Press Kit (Fixing Issue 5: No duplicate standalone downloads) -->
+          <div class="mt-12 p-6 bg-ash/70 border border-char notch">
+            <p class="label !text-ember mb-2" data-i18n="contactPage.pressKitTitle">Press Kit Oficial</p>
+            <p class="text-bone/70 text-sm mb-4 leading-relaxed" data-i18n="contactPage.pressKitDesc">
+              Logotipos vetorizados, fotos de divulgação em alta resolução e release técnico 2025.
+            </p>
+            <a href="https://linktr.ee/d4mond4rk" target="_blank" rel="noreferrer" class="btn btn-ghost !py-2.5 w-full justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+              <span data-i18n="contactPage.downloadPressKit">Baixar Press Kit Completo (.ZIP)</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Netlify Booking Form Column (Fixing Issue 4, 8 & 9) -->
+        <div class="relative md:col-span-7">
+          <div class="notch relative overflow-hidden bg-ash p-6 md:p-12 border border-char/40">
+            <img src="img/cutout-summon.webp" alt="" loading="lazy" class="pointer-events-none absolute -right-24 -top-10 w-[70%] opacity-[0.08] md:opacity-[0.12]" />
+
+            <form name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact?success=true" class="relative space-y-10">
+              <!-- Netlify Hidden Identifiers -->
+              <input type="hidden" name="form-name" value="booking" />
+              <input type="hidden" name="kind" id="form-kind" value="Festival" />
+
+              <!-- Honeypot anti-spam -->
+              <p class="hidden">
+                <label>Não preencha este campo se for humano: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+              </p>
+
+              <!-- Category Preset Buttons -->
+              <fieldset>
+                <legend class="label mb-4" data-i18n="contactPage.formLegend">O que você está invocando?</legend>
+                <div class="flex flex-wrap gap-2">
+                  <button type="button" class="kind-select-btn btn !px-4 !py-2.5 btn-ember" data-kind-value="Festival" aria-pressed="true">
+                    <span data-i18n="contactPage.kindFestival">Festival</span>
+                  </button>
+                  <button type="button" class="kind-select-btn btn !px-4 !py-2.5 btn-ghost" data-kind-value="Club night" aria-pressed="false">
+                    <span data-i18n="contactPage.kindClub">Noite de clube</span>
+                  </button>
+                  <button type="button" class="kind-select-btn btn !px-4 !py-2.5 btn-ghost" data-kind-value="Private ritual" aria-pressed="false">
+                    <span data-i18n="contactPage.kindPrivate">Ritual privado</span>
+                  </button>
+                  <button type="button" class="kind-select-btn btn !px-4 !py-2.5 btn-ghost" data-kind-value="Press / collab" aria-pressed="false">
+                    <span data-i18n="contactPage.kindPress">Imprensa / Collab</span>
+                  </button>
+                </div>
+              </fieldset>
+
+              <!-- Field Inputs -->
+              <div class="grid gap-10 md:grid-cols-2">
+                <div>
+                  <label for="name" class="label" data-i18n="contactPage.nameLabel">Seu nome</label>
+                  <input id="name" name="name" type="text" required data-i18n-ph="contactPage.namePlaceholder" placeholder="Quem convoca" autocomplete="name" class="field [color-scheme:dark]" />
+                </div>
+                <div>
+                  <label for="email" class="label" data-i18n="contactPage.emailLabel">E-mail</label>
+                  <input id="email" name="email" type="email" required data-i18n-ph="contactPage.emailPlaceholder" placeholder="voce@dominio.com" autocomplete="email" class="field [color-scheme:dark]" />
+                </div>
+                <div>
+                  <label for="event" class="label" data-i18n="contactPage.eventLabel">Evento / Festa</label>
+                  <input id="event" name="event" type="text" data-i18n-ph="contactPage.eventPlaceholder" placeholder="Nome da celebração" class="field [color-scheme:dark]" />
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                  <div>
+                    <label for="date" class="label" data-i18n="contactPage.dateLabel">Data</label>
+                    <input id="date" name="date" type="date" class="field [color-scheme:dark]" />
+                  </div>
+                  <div>
+                    <label for="city" class="label" data-i18n="contactPage.cityLabel">Cidade</label>
+                    <input id="city" name="city" type="text" data-i18n-ph="contactPage.cityPlaceholder" placeholder="Onde acontecerá" class="field [color-scheme:dark]" />
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label for="message" class="label" data-i18n="contactPage.messageLabel">A noite, em suas palavras</label>
+                <textarea id="message" name="message" rows="4" data-i18n-ph="contactPage.messagePlaceholder" placeholder="Tempo de set, palco, horário, a atmosfera desejada..." class="field resize-none"></textarea>
+              </div>
+
+              <!-- Submit CTA: Unified "Enviar Invocação" / "Send Summons" -->
+              <button type="submit" class="btn btn-ember w-full justify-center !py-5 md:w-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>
+                <span data-i18n="contactPage.submitBtn">Enviar Invocação</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative mt-32 overflow-hidden border-t border-soot">
+    <div class="mx-auto grid max-w-[1500px] gap-12 px-5 pb-28 pt-16 md:grid-cols-12 md:px-10">
+      <div class="md:col-span-6">
+        <p class="label mb-4" data-i18n="footer.incantationTag">Encantamento Final</p>
+        <p class="font-serif text-4xl italic leading-tight text-bone md:text-5xl" data-i18n="footer.quote">“Liberte sua sombra e dance com ela!”</p>
+        <p class="mt-3 label !normal-case !tracking-[0.12em]" data-i18n="footer.quoteEn">Free your shadow and dance with it.</p>
+      </div>
+
+      <div class="md:col-span-3">
+        <p class="label mb-4" data-i18n="footer.navigateTag">Navegação</p>
+        <ul class="space-y-2 font-display uppercase">
+          <li><a class="hover:text-ember transition-colors" href="/gallery"><span class="text-ember mr-2">01</span><span data-i18n="nav.gallery">Galeria</span></a></li>
+          <li><a class="hover:text-ember transition-colors" href="/projects"><span class="text-ember mr-2">02</span><span data-i18n="nav.rituals">Rituais</span></a></li>
+          <li><a class="hover:text-ember transition-colors" href="/about"><span class="text-ember mr-2">03</span><span data-i18n="nav.about">Sobre</span></a></li>
+          <li><a class="hover:text-ember transition-colors active" href="/contact"><span class="text-ember mr-2">04</span><span data-i18n="nav.contact">Contato</span></a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-3">
+        <p class="label mb-4" data-i18n="footer.signalTag">Sinal Oficial</p>
+        <ul class="space-y-2">
+          <li>
+            <a href="https://instagram.com/d4mond4rk" target="_blank" rel="noreferrer" class="group inline-flex items-center gap-2 font-display uppercase hover:text-ember transition-colors">
+              Instagram
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://linktr.ee/d4mond4rk" target="_blank" rel="noreferrer" class="group inline-flex items-center gap-2 font-display uppercase hover:text-ember transition-colors">
+              Linktree
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p aria-hidden="true" class="display outline-text pointer-events-none absolute -bottom-[0.18em] left-1/2 -translate-x-1/2 select-none whitespace-nowrap text-[26vw]">D4MON</p>
+    
+    <div class="relative mx-auto flex max-w-[1500px] justify-between px-5 pb-6 md:px-10">
+      <span class="label" data-i18n="footer.copyright">© 2026 D4MON</span>
+      <span class="label hidden sm:inline" data-i18n="footer.origin">Dark Psy · Brasil</span>
+    </div>
+  </footer>
+
+  <!-- Floating Audio Player -->
+  <div class="fixed bottom-4 right-4 z-50">
+    <div class="notch flex items-center gap-3 bg-ash/90 backdrop-blur-md pl-2 pr-4 py-2 border border-char shadow-2xl">
+      <button id="player-toggle-btn" type="button" aria-label="Reproduzir faixa" class="grid size-10 place-items-center rounded-full bg-ember text-void transition hover:bg-sulfur active:scale-95">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play ml-0.5"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg>
+      </button>
+      <div class="hidden sm:block">
+        <p class="label !text-[0.6rem] !tracking-[0.22em]" data-i18n="player.transmitter">Transmissor</p>
+        <p class="font-display text-sm uppercase tracking-wide">
+          <span data-i18n="player.trackTitle">ID — Track Cut</span> <span class="text-smoke" data-i18n="player.year">/ 2025</span>
+        </p>
+        <div class="mt-1 h-px w-40 bg-char">
+          <div id="player-progress" class="h-px bg-ember" style="width: 0%"></div>
+        </div>
+      </div>
+      <canvas id="player-canvas" width="72" height="30" class="h-[30px] w-[72px]"></canvas>
+    </div>
+    <audio id="d4mon-audio" src="audio/d4mon-track-cut-2025.wav" preload="metadata"></audio>
+  </div>
+
+  <!-- Scripts -->
+  <script src="locales/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

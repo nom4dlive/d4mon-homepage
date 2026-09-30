@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre — D4MON | Brilho &amp; Sombra</title>
+  <meta name="theme-color" content="#0c0908" />
+  <meta name="description" content="Biografia e dossiê oficial do projeto D4MON por Guilherme Germano: a manifestação da escuridão no Dark Psy." />
+  <meta property="og:title" content="Sobre — D4MON" />
+  <meta property="og:description" content="Biografia e dossiê oficial do projeto D4MON." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/cutout-hood.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;family=Tektur:wght@500;700;900&amp;display=swap" />
+
+  <!-- Preload Hood Image -->
+  <link rel="preload" as="image" href="img/cutout-hood.webp" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="grain text-bone bg-void">
+
+  <!-- Header -->
+  <header class="fixed inset-x-0 top-0 z-40 transition-colors duration-500 bg-void/80 backdrop-blur-md border-b border-soot/40">
+    <div class="mx-auto flex max-w-[1500px] items-center justify-between px-5 py-4 md:px-10">
+      <a aria-label="D4MON — home" class="block" href="/">
+        <img src="img/logo-flame.webp" alt="D4MON" width="160" height="50" class="h-9 w-auto md:h-10" />
+      </a>
+      
+      <!-- Primary Desktop Nav -->
+      <nav class="hidden items-center gap-7 lg:gap-9 md:flex" aria-label="Primary">
+        <a class="group label !text-bone/80 hover:!text-ember transition-colors" href="/gallery">
+          <span class="mr-1.5 text-ember/60 group-hover:text-ember">01</span><span data-i18n="nav.gallery">Galeria</span>
+        </a>
+        <a class="group label !text-bone/80 hover:!text-ember transition-colors" href="/projects">
+          <span class="mr-1.5 text-ember/60 group-hover:text-ember">02</span><span data-i18n="nav.rituals">Rituais</span>
+        </a>
+        <a class="group label !text-ember transition-colors active" href="/about" aria-current="page">
+          <span class="mr-1.5 text-ember">03</span><span data-i18n="nav.about">Sobre</span>
+        </a>
+        <a class="group label !text-bone/80 hover:!text-ember transition-colors" href="/contact">
+          <span class="mr-1.5 text-ember/60 group-hover:text-ember">04</span><span data-i18n="nav.contact">Contato</span>
+        </a>
+
+        <!-- Language Switcher Toggle -->
+        <div class="flex items-center gap-1 bg-ash/70 p-1 border border-char" role="group" aria-label="Language selection">
+          <button type="button" class="lang-btn btn !py-1 !px-2.5 text-xs font-mono btn-ember" data-lang="pt" aria-pressed="true">PT</button>
+          <button type="button" class="lang-btn btn !py-1 !px-2.5 text-xs font-mono btn-ghost" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <a class="btn btn-ember !py-2.5 !px-5" href="/contact" data-i18n="nav.bookBtn">Invocar D4MON</a>
+      </nav>
+
+      <!-- Mobile Button -->
+      <div class="flex items-center gap-3 md:hidden">
+        <div class="flex items-center gap-1 bg-ash p-1 border border-char">
+          <button type="button" class="lang-btn btn !py-1 !px-2 text-xs font-mono btn-ember" data-lang="pt">PT</button>
+          <button type="button" class="lang-btn btn !py-1 !px-2 text-xs font-mono btn-ghost" data-lang="en">EN</button>
+        </div>
+        <button id="mobile-menu-btn" type="button" class="grid size-10 place-items-center text-bone" aria-expanded="false" aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobile-nav" class="hidden md:hidden border-b border-soot bg-void/95 px-5 py-6 space-y-4">
+      <a class="block label text-lg" href="/gallery"><span class="text-ember mr-2">01</span><span data-i18n="nav.gallery">Galeria</span></a>
+      <a class="block label text-lg" href="/projects"><span class="text-ember mr-2">02</span><span data-i18n="nav.rituals">Rituais</span></a>
+      <a class="block label text-lg text-ember" href="/about"><span class="text-ember mr-2">03</span><span data-i18n="nav.about">Sobre</span></a>
+      <a class="block label text-lg" href="/contact"><span class="text-ember mr-2">04</span><span data-i18n="nav.contact">Contato</span></a>
+      <a class="btn btn-ember w-full justify-center !py-3" href="/contact" data-i18n="nav.bookBtn">Invocar D4MON</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="mx-auto grid max-w-[1500px] gap-14 px-5 pt-36 md:grid-cols-12 md:px-10 md:pt-44">
+      <!-- Vessel Column -->
+      <div class="md:col-span-5">
+        <div class="md:sticky md:top-28">
+          <div class="relative">
+            <div class="hellglow absolute inset-0 animate-breathe"></div>
+            <img src="img/cutout-hood.webp" alt="Retrato da máscara de D4MON com capuz e micro-LEDs" width="1348" height="1520" loading="eager" fetchPriority="high" class="relative h-auto w-full animate-rise" />
+          </div>
+          <p class="label mt-4 flex justify-between">
+            <span data-i18n="aboutPage.fig">Fig. 01 — O receptáculo</span>
+            <span class="text-ember">Rec ●</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Bio and Dossier Column -->
+      <div class="md:col-span-7">
+        <p class="label mb-6 animate-rise"><span class="text-ember">03</span> — <span data-i18n="aboutPage.tag">Sobre</span></p>
+        <h1 class="display text-[15vw] animate-rise [animation-delay:100ms] md:text-[8rem]">
+          <span data-i18n="aboutPage.headline">Brilho</span><br /><span class="text-ember" data-i18n="aboutPage.headlineAccent">&amp; sombra</span>
+        </h1>
+        <p class="mt-6 text-2xl italic text-smoke animate-rise [animation-delay:200ms]" data-i18n="aboutPage.sub">
+          Brilho e mistério sombrio: duas metades do mesmo criador.
+        </p>
+
+        <!-- Biography Body -->
+        <div class="mt-10 space-y-7 text-bone">
+          <p class="animate-rise leading-snug text-3xl md:text-4xl" data-i18n="aboutPage.p1">
+            Como o dia e a noite se entrelaçam, Guilherme Germano também se equilibra entre o brilho e o mistério sombrio.
+          </p>
+          <p class="animate-rise leading-snug text-xl text-bone/80 md:text-2xl" data-i18n="aboutPage.p2">
+            D4MON é a manifestação pura da obscuridade de seu criador. Usando o Dark Psy como instrumento de conexão, em performances carregadas de basslines violentas e melodias demoníacas.
+          </p>
+          <p class="animate-rise leading-snug text-xl text-bone/80 md:text-2xl" data-i18n="aboutPage.p3">
+            Ele concentra toda a sua essência sombria, hipnotizando a audiência e levando-a a uma imersão total na obscuridade.
+          </p>
+          <p class="animate-rise leading-snug text-xl text-bone/80 md:text-2xl" data-i18n="aboutPage.p4">
+            Deixe-se levar pela psicodelia sombria, onde seus sentidos serão aguçados e suas emoções levadas aos recantos mais profundos e sinistros de sua mente.
+          </p>
+          <p class="display animate-rise pt-4 text-3xl text-ember md:text-5xl" data-i18n="aboutPage.incantation">
+            Liberte sua sombra e dance com ela!
+          </p>
+        </div>
+
+        <!-- Dossier Table -->
+        <div class="mt-24">
+          <div class="trace mb-8"></div>
+          <p class="label mb-6" data-i18n="aboutPage.dossierTag">Dossiê</p>
+          <dl class="divide-y divide-soot border-y border-soot">
+            <div class="group grid grid-cols-3 gap-4 py-4 transition-colors hover:bg-ash">
+              <dt class="label self-center group-hover:!text-ember" data-i18n="aboutPage.aliasLabel">Alias</dt>
+              <dd class="col-span-2 font-display text-lg uppercase tracking-wide">D4MON</dd>
+            </div>
+            <div class="group grid grid-cols-3 gap-4 py-4 transition-colors hover:bg-ash">
+              <dt class="label self-center group-hover:!text-ember" data-i18n="aboutPage.vesselLabel">Receptáculo</dt>
+              <dd class="col-span-2 font-display text-lg uppercase tracking-wide">Guilherme Germano</dd>
+            </div>
+            <div class="group grid grid-cols-3 gap-4 py-4 transition-colors hover:bg-ash">
+              <dt class="label self-center group-hover:!text-ember" data-i18n="aboutPage.soundLabel">Som</dt>
+              <dd class="col-span-2 font-display text-lg uppercase tracking-wide" data-i18n="aboutPage.soundValue">Dark Psy — noturno, escuridão total</dd>
+            </div>
+            <div class="group grid grid-cols-3 gap-4 py-4 transition-colors hover:bg-ash">
+              <dt class="label self-center group-hover:!text-ember" data-i18n="aboutPage.signatureLabel">Assinatura</dt>
+              <dd class="col-span-2 font-display text-lg uppercase tracking-wide" data-i18n="aboutPage.signatureValue">Máscara respiratória com chifres e LEDs vermelhos</dd>
+            </div>
+            <div class="group grid grid-cols-3 gap-4 py-4 transition-colors hover:bg-ash">
+              <dt class="label self-center group-hover:!text-ember" data-i18n="aboutPage.weaponsLabel">Armas</dt>
+              <dd class="col-span-2 font-display text-lg uppercase tracking-wide" data-i18n="aboutPage.weaponsValue">Basslines violentas. Melodias demoníacas.</dd>
+            </div>
+            <div class="group grid grid-cols-3 gap-4 py-4 transition-colors hover:bg-ash">
+              <dt class="label self-center group-hover:!text-ember" data-i18n="aboutPage.originLabel">Origem</dt>
+              <dd class="col-span-2 font-display text-lg uppercase tracking-wide" data-i18n="aboutPage.originValue">Brasil</dd>
+            </div>
+            <div class="group grid grid-cols-3 gap-4 py-4 transition-colors hover:bg-ash">
+              <dt class="label self-center group-hover:!text-ember" data-i18n="aboutPage.signalLabel">Sinal</dt>
+              <dd class="col-span-2 font-display text-lg uppercase tracking-wide">@d4mond4rk</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Official Wordmark (Fixing Issue 6: Only single official burning flame logo) -->
+        <div class="mt-20">
+          <p class="label mb-6" data-i18n="aboutPage.wordmarkTag">O Logotipo Oficial</p>
+          <div class="notch bg-ash p-8 md:p-12 border border-char/40">
+            <img src="img/logo-flame.webp" alt="Logotipo oficial de chamas de D4MON com chifres e circuitos" width="1600" height="503" loading="lazy" class="h-auto w-full max-w-xl mx-auto" />
+          </div>
+          <p class="mt-4 max-w-lg text-lg italic text-smoke" data-i18n="aboutPage.wordmarkDesc">
+            Letras em chamas sobre trilhas de circuito, com chifres emergindo do M. Representa o elo exato entre a máquina e o ritual, assim como a música.
+          </p>
+        </div>
+
+        <div class="mt-16">
+          <a class="btn btn-ember" href="/projects">
+            <span data-i18n="aboutPage.seeRitualsBtn">Ver os rituais</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative mt-32 overflow-hidden border-t border-soot">
+    <div class="mx-auto grid max-w-[1500px] gap-12 px-5 pb-28 pt-16 md:grid-cols-12 md:px-10">
+      <div class="md:col-span-6">
+        <p class="label mb-4" data-i18n="footer.incantationTag">Encantamento Final</p>
+        <p class="font-serif text-4xl italic leading-tight text-bone md:text-5xl" data-i18n="footer.quote">“Liberte sua sombra e dance com ela!”</p>
+        <p class="mt-3 label !normal-case !tracking-[0.12em]" data-i18n="footer.quoteEn">Free your shadow and dance with it.</p>
+      </div>
+
+      <div class="md:col-span-3">
+        <p class="label mb-4" data-i18n="footer.navigateTag">Navegação</p>
+        <ul class="space-y-2 font-display uppercase">
+          <li><a class="hover:text-ember transition-colors" href="/gallery"><span class="text-ember mr-2">01</span><span data-i18n="nav.gallery">Galeria</span></a></li>
+          <li><a class="hover:text-ember transition-colors" href="/projects"><span class="text-ember mr-2">02</span><span data-i18n="nav.rituals">Rituais</span></a></li>
+          <li><a class="hover:text-ember transition-colors" href="/about"><span class="text-ember mr-2">03</span><span data-i18n="nav.about">Sobre</span></a></li>
+          <li><a class="hover:text-ember transition-colors" href="/contact"><span class="text-ember mr-2">04</span><span data-i18n="nav.contact">Contato</span></a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-3">
+        <p class="label mb-4" data-i18n="footer.signalTag">Sinal Oficial</p>
+        <ul class="space-y-2">
+          <li>
+            <a href="https://instagram.com/d4mond4rk" target="_blank" rel="noreferrer" class="group inline-flex items-center gap-2 font-display uppercase hover:text-ember transition-colors">
+              Instagram
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://linktr.ee/d4mond4rk" target="_blank" rel="noreferrer" class="group inline-flex items-center gap-2 font-display uppercase hover:text-ember transition-colors">
+              Linktree
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p aria-hidden="true" class="display outline-text pointer-events-none absolute -bottom-[0.18em] left-1/2 -translate-x-1/2 select-none whitespace-nowrap text-[26vw]">D4MON</p>
+    
+    <div class="relative mx-auto flex max-w-[1500px] justify-between px-5 pb-6 md:px-10">
+      <span class="label" data-i18n="footer.copyright">© 2026 D4MON</span>
+      <span class="label hidden sm:inline" data-i18n="footer.origin">Dark Psy · Brasil</span>
+    </div>
+  </footer>
+
+  <!-- Floating Audio Player -->
+  <div class="fixed bottom-4 right-4 z-50">
+    <div class="notch flex items-center gap-3 bg-ash/90 backdrop-blur-md pl-2 pr-4 py-2 border border-char shadow-2xl">
+      <button id="player-toggle-btn" type="button" aria-label="Reproduzir faixa" class="grid size-10 place-items-center rounded-full bg-ember text-void transition hover:bg-sulfur active:scale-95">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play ml-0.5"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg>
+      </button>
+      <div class="hidden sm:block">
+        <p class="label !text-[0.6rem] !tracking-[0.22em]" data-i18n="player.transmitter">Transmissor</p>
+        <p class="font-display text-sm uppercase tracking-wide">
+          <span data-i18n="player.trackTitle">ID — Track Cut</span> <span class="text-smoke" data-i18n="player.year">/ 2025</span>
+        </p>
+        <div class="mt-1 h-px w-40 bg-char">
+          <div id="player-progress" class="h-px bg-ember" style="width: 0%"></div>
+        </div>
+      </div>
+      <canvas id="player-canvas" width="72" height="30" class="h-[30px] w-[72px]"></canvas>
+    </div>
+    <audio id="d4mon-audio" src="audio/d4mon-track-cut-2025.wav" preload="metadata"></audio>
+  </div>
+
+  <!-- Scripts -->
+  <script src="locales/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
