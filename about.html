@@ -26,43 +26,43 @@
 <body class="grain text-bone bg-void">
 
   <!-- Header -->
-  <header class="fixed inset-x-0 top-0 z-40 transition-colors duration-500 bg-void/80 backdrop-blur-md border-b border-soot/40">
-    <div class="mx-auto flex max-w-[1500px] items-center justify-between px-5 py-4 md:px-10">
-      <a aria-label="D4MON — home" class="block" href="index.html">
-        <img src="img/logo-flame.webp" alt="D4MON" width="160" height="50" class="h-9 w-auto md:h-10" />
+    <header class="fixed inset-x-0 top-0 z-40 transition-colors duration-500 bg-void/85 backdrop-blur-md border-b border-soot/40">
+    <div class="mx-auto flex max-w-[1500px] items-center justify-between px-5 py-3 md:px-10">
+      <a aria-label="D4MON — home" class="block transition-transform hover:scale-105" href="index.html">
+        <img src="img/logo-hellfire.png" alt="D4MON Master Logo" width="180" height="54" class="brand-logo-img" />
       </a>
       
       <!-- Primary Desktop Nav -->
-      <nav class="hidden items-center gap-7 lg:gap-9 md:flex" aria-label="Primary">
-        <a class="group label !text-bone/80 hover:!text-ember transition-colors" href="gallery.html">
-          <span class="mr-1.5 text-ember/60 group-hover:text-ember">01</span><span data-i18n="nav.gallery">Galeria</span>
+      <nav class="hidden md:flex site-nav" aria-label="Primary">
+        <a class="nav-link !text-bone/80" href="gallery.html">
+          <span class="nav-num">01</span><span data-i18n="nav.gallery">Galeria</span>
         </a>
-        <a class="group label !text-bone/80 hover:!text-ember transition-colors" href="projects.html">
-          <span class="mr-1.5 text-ember/60 group-hover:text-ember">02</span><span data-i18n="nav.rituals">Rituais</span>
+        <a class="nav-link !text-bone/80" href="projects.html">
+          <span class="nav-num">02</span><span data-i18n="nav.rituals">Rituais</span>
         </a>
-        <a class="group label !text-ember transition-colors active" href="about.html" aria-current="page">
-          <span class="mr-1.5 text-ember">03</span><span data-i18n="nav.about">Sobre</span>
+        <a class="nav-link !text-ember" href="about.html">
+          <span class="nav-num">03</span><span data-i18n="nav.about">Sobre</span>
         </a>
-        <a class="group label !text-bone/80 hover:!text-ember transition-colors" href="contact.html">
-          <span class="mr-1.5 text-ember/60 group-hover:text-ember">04</span><span data-i18n="nav.contact">Contato</span>
+        <a class="nav-link !text-bone/80" href="contact.html">
+          <span class="nav-num">04</span><span data-i18n="nav.contact">Contato</span>
         </a>
 
         <!-- Language Switcher Toggle -->
-        <div class="flex items-center gap-1 bg-ash/70 p-1 border border-char" role="group" aria-label="Language selection">
+        <div class="lang-toggle-box" role="group" aria-label="Language selection">
           <button type="button" class="lang-btn btn !py-1 !px-2.5 text-xs font-mono btn-ember" data-lang="pt" aria-pressed="true">PT</button>
           <button type="button" class="lang-btn btn !py-1 !px-2.5 text-xs font-mono btn-ghost" data-lang="en" aria-pressed="false">EN</button>
         </div>
 
-        <a class="btn btn-ember !py-2.5 !px-5" href="contact.html" data-i18n="nav.bookBtn">Invocar D4MON</a>
+        <a class="btn btn-ember nav-cta-btn !py-2.5 !px-5" href="contact.html" data-i18n="nav.bookBtn">Invocar D4MON</a>
       </nav>
 
       <!-- Mobile Button -->
       <div class="flex items-center gap-3 md:hidden">
-        <div class="flex items-center gap-1 bg-ash p-1 border border-char">
+        <div class="lang-toggle-box !m-0" role="group" aria-label="Language selection">
           <button type="button" class="lang-btn btn !py-1 !px-2 text-xs font-mono btn-ember" data-lang="pt">PT</button>
           <button type="button" class="lang-btn btn !py-1 !px-2 text-xs font-mono btn-ghost" data-lang="en">EN</button>
         </div>
-        <button id="mobile-menu-btn" type="button" class="grid size-10 place-items-center text-bone" aria-expanded="false" aria-label="Toggle menu">
+        <button id="mobile-menu-btn" type="button" class="grid size-10 place-items-center text-bone border border-char bg-ash/80" aria-expanded="false" aria-label="Toggle menu">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
         </button>
       </div>
@@ -72,7 +72,7 @@
     <div id="mobile-nav" class="hidden md:hidden border-b border-soot bg-void/95 px-5 py-6 space-y-4">
       <a class="block label text-lg" href="gallery.html"><span class="text-ember mr-2">01</span><span data-i18n="nav.gallery">Galeria</span></a>
       <a class="block label text-lg" href="projects.html"><span class="text-ember mr-2">02</span><span data-i18n="nav.rituals">Rituais</span></a>
-      <a class="block label text-lg text-ember" href="about.html"><span class="text-ember mr-2">03</span><span data-i18n="nav.about">Sobre</span></a>
+      <a class="block label text-lg" href="about.html"><span class="text-ember mr-2">03</span><span data-i18n="nav.about">Sobre</span></a>
       <a class="block label text-lg" href="contact.html"><span class="text-ember mr-2">04</span><span data-i18n="nav.contact">Contato</span></a>
       <a class="btn btn-ember w-full justify-center !py-3" href="contact.html" data-i18n="nav.bookBtn">Invocar D4MON</a>
     </div>
@@ -85,11 +85,11 @@
         <div class="md:sticky md:top-28">
           <div class="relative">
             <div class="hellglow absolute inset-0 animate-breathe"></div>
-            <img src="img/cutout-hood.webp" alt="Retrato da máscara de D4MON com capuz e micro-LEDs" width="1348" height="1520" loading="eager" fetchPriority="high" class="relative h-auto w-full animate-rise" />
+            <img src="img/vessel-horns.png" alt="Retrato oficial do receptáculo de D4MON com chifres em chamas e tubos de respiração" width="1348" height="1520" loading="eager" fetchPriority="high" class="relative h-auto w-full animate-rise drop-shadow-[0_10px_35px_rgba(255,91,31,0.25)]" />
           </div>
           <p class="label mt-4 flex justify-between">
             <span data-i18n="aboutPage.fig">Fig. 01 — O receptáculo</span>
-            <span class="text-ember">Rec ●</span>
+            <span class="text-ember font-mono">Rec ● 2025</span>
           </p>
         </div>
       </div>
@@ -162,8 +162,8 @@
         <!-- Official Wordmark (Fixing Issue 6: Only single official burning flame logo) -->
         <div class="mt-20">
           <p class="label mb-6" data-i18n="aboutPage.wordmarkTag">O Logotipo Oficial</p>
-          <div class="notch bg-ash p-8 md:p-12 border border-char/40">
-            <img src="img/logo-flame.webp" alt="Logotipo oficial de chamas de D4MON com chifres e circuitos" width="1600" height="503" loading="lazy" class="h-auto w-full max-w-xl mx-auto" />
+          <div class="notch bg-ash p-8 md:p-12 border border-char/40 text-center">
+            <img src="img/logo-hellfire.png" alt="Logotipo oficial de chamas de D4MON com chifres e circuitos" width="1600" height="503" loading="lazy" class="h-auto w-full max-w-xl mx-auto filter drop-shadow-[0_0_20px_rgba(255,91,31,0.5)]" />
           </div>
           <p class="mt-4 max-w-lg text-lg italic text-smoke" data-i18n="aboutPage.wordmarkDesc">
             Letras em chamas sobre trilhas de circuito, com chifres emergindo do M. Representa o elo exato entre a máquina e o ritual, assim como a música.

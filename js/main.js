@@ -242,7 +242,7 @@ function initLightbox() {
     const item = filteredGallery[index] || galleryItems[index];
     if (!item) return;
 
-    modalImg.src = `img/${item.img}`;
+    modalImg.src = item.img.startsWith('img/') ? item.img : `img/${item.img}`;
     modalImg.alt = item.alt[currentLang] || item.alt.pt; // Pure accessibility description
     modalCaption.textContent = item.caption[currentLang] || item.caption.pt; // Editorial metadata
     modalCounter.textContent = `${item.id} / ${galleryItems.length}`;

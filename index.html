@@ -27,43 +27,43 @@
 <body class="grain text-bone bg-void">
 
   <!-- Header -->
-  <header class="fixed inset-x-0 top-0 z-40 transition-colors duration-500 bg-void/80 backdrop-blur-md border-b border-soot/40">
-    <div class="mx-auto flex max-w-[1500px] items-center justify-between px-5 py-4 md:px-10">
-      <a aria-label="D4MON — home" class="block" href="index.html">
-        <img src="img/logo-flame.webp" alt="D4MON" width="160" height="50" class="h-9 w-auto md:h-10" />
+    <header class="fixed inset-x-0 top-0 z-40 transition-colors duration-500 bg-void/85 backdrop-blur-md border-b border-soot/40">
+    <div class="mx-auto flex max-w-[1500px] items-center justify-between px-5 py-3 md:px-10">
+      <a aria-label="D4MON — home" class="block transition-transform hover:scale-105" href="index.html">
+        <img src="img/logo-hellfire.png" alt="D4MON Master Logo" width="180" height="54" class="brand-logo-img" />
       </a>
       
       <!-- Primary Desktop Nav -->
-      <nav class="hidden items-center gap-7 lg:gap-9 md:flex" aria-label="Primary">
-        <a class="group label !text-bone/80 hover:!text-ember transition-colors" href="gallery.html">
-          <span class="mr-1.5 text-ember/60 group-hover:text-ember">01</span><span data-i18n="nav.gallery">Galeria</span>
+      <nav class="hidden md:flex site-nav" aria-label="Primary">
+        <a class="nav-link !text-bone/80" href="gallery.html">
+          <span class="nav-num">01</span><span data-i18n="nav.gallery">Galeria</span>
         </a>
-        <a class="group label !text-bone/80 hover:!text-ember transition-colors" href="projects.html">
-          <span class="mr-1.5 text-ember/60 group-hover:text-ember">02</span><span data-i18n="nav.rituals">Rituais</span>
+        <a class="nav-link !text-bone/80" href="projects.html">
+          <span class="nav-num">02</span><span data-i18n="nav.rituals">Rituais</span>
         </a>
-        <a class="group label !text-bone/80 hover:!text-ember transition-colors" href="about.html">
-          <span class="mr-1.5 text-ember/60 group-hover:text-ember">03</span><span data-i18n="nav.about">Sobre</span>
+        <a class="nav-link !text-bone/80" href="about.html">
+          <span class="nav-num">03</span><span data-i18n="nav.about">Sobre</span>
         </a>
-        <a class="group label !text-bone/80 hover:!text-ember transition-colors" href="contact.html">
-          <span class="mr-1.5 text-ember/60 group-hover:text-ember">04</span><span data-i18n="nav.contact">Contato</span>
+        <a class="nav-link !text-bone/80" href="contact.html">
+          <span class="nav-num">04</span><span data-i18n="nav.contact">Contato</span>
         </a>
 
         <!-- Language Switcher Toggle -->
-        <div class="flex items-center gap-1 bg-ash/70 p-1 border border-char" role="group" aria-label="Language selection">
+        <div class="lang-toggle-box" role="group" aria-label="Language selection">
           <button type="button" class="lang-btn btn !py-1 !px-2.5 text-xs font-mono btn-ember" data-lang="pt" aria-pressed="true">PT</button>
           <button type="button" class="lang-btn btn !py-1 !px-2.5 text-xs font-mono btn-ghost" data-lang="en" aria-pressed="false">EN</button>
         </div>
 
-        <a class="btn btn-ember !py-2.5 !px-5" href="contact.html" data-i18n="nav.bookBtn">Invocar D4MON</a>
+        <a class="btn btn-ember nav-cta-btn !py-2.5 !px-5" href="contact.html" data-i18n="nav.bookBtn">Invocar D4MON</a>
       </nav>
 
       <!-- Mobile Button -->
       <div class="flex items-center gap-3 md:hidden">
-        <div class="flex items-center gap-1 bg-ash p-1 border border-char">
+        <div class="lang-toggle-box !m-0" role="group" aria-label="Language selection">
           <button type="button" class="lang-btn btn !py-1 !px-2 text-xs font-mono btn-ember" data-lang="pt">PT</button>
           <button type="button" class="lang-btn btn !py-1 !px-2 text-xs font-mono btn-ghost" data-lang="en">EN</button>
         </div>
-        <button id="mobile-menu-btn" type="button" class="grid size-10 place-items-center text-bone" aria-expanded="false" aria-label="Toggle menu">
+        <button id="mobile-menu-btn" type="button" class="grid size-10 place-items-center text-bone border border-char bg-ash/80" aria-expanded="false" aria-label="Toggle menu">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
         </button>
       </div>
@@ -179,7 +179,7 @@
         </a>
 
         <a class="group relative w-[78vw] shrink-0 snap-start overflow-hidden bg-ash md:w-[34vw] lg:w-[27vw]" href="projects.html">
-          <img src="img/live-psychollusion-1.jpg" alt="D4MON no Psychollusion" loading="lazy" class="aspect-[1/1.3] w-full object-cover grayscale-[60%] transition duration-700 group-hover:scale-105 group-hover:grayscale-0" />
+          <img src="img/gallery/live-psychollusion-1.jpg" alt="D4MON no Psychollusion" loading="lazy" class="aspect-[1/1.3] w-full object-cover grayscale-[60%] transition duration-700 group-hover:scale-105 group-hover:grayscale-0" />
           <div class="absolute inset-0 bg-gradient-to-t from-void via-void/10 to-transparent"></div>
           <div class="absolute inset-x-0 bottom-0 p-6">
             <p class="label !text-ember">02 · Live</p>
@@ -188,16 +188,16 @@
         </a>
 
         <a class="group relative w-[78vw] shrink-0 snap-start overflow-hidden bg-ash md:w-[34vw] lg:w-[27vw]" href="projects.html">
-          <img src="img/live-origins.jpg" alt="D4MON no Origins" loading="lazy" class="aspect-[1/1.3] w-full object-cover grayscale-[60%] transition duration-700 group-hover:scale-105 group-hover:grayscale-0" />
+          <img src="img/gallery/live-stage-9449.jpg" alt="D4MON no comando do palco" loading="lazy" class="aspect-[1/1.3] w-full object-cover grayscale-[60%] transition duration-700 group-hover:scale-105 group-hover:grayscale-0" />
           <div class="absolute inset-0 bg-gradient-to-t from-void via-void/10 to-transparent"></div>
           <div class="absolute inset-x-0 bottom-0 p-6">
-            <p class="label !text-ember">03 · 2024</p>
-            <h3 class="display mt-2 text-4xl transition-colors group-hover:text-sulfur">Origins</h3>
+            <p class="label !text-ember">03 · Ritual</p>
+            <h3 class="display mt-2 text-4xl transition-colors group-hover:text-sulfur">Púlpito do Palco</h3>
           </div>
         </a>
 
         <a class="group relative w-[78vw] shrink-0 snap-start overflow-hidden bg-ash md:w-[34vw] lg:w-[27vw]" href="projects.html">
-          <img src="img/live-highloween.jpg" alt="D4MON no Highloween" loading="lazy" class="aspect-[1/1.3] w-full object-cover grayscale-[60%] transition duration-700 group-hover:scale-105 group-hover:grayscale-0" />
+          <img src="img/gallery/live-highloween-1.jpg" alt="D4MON no Highloween" loading="lazy" class="aspect-[1/1.3] w-full object-cover grayscale-[60%] transition duration-700 group-hover:scale-105 group-hover:grayscale-0" />
           <div class="absolute inset-0 bg-gradient-to-t from-void via-void/10 to-transparent"></div>
           <div class="absolute inset-x-0 bottom-0 p-6">
             <p class="label !text-ember">04 · 2023</p>
@@ -211,7 +211,7 @@
     <section class="mx-auto mt-32 max-w-[1500px] px-5 md:mt-44 md:px-10">
       <div class="grid grid-cols-6 gap-3 md:grid-cols-12 md:gap-5">
         <div class="col-span-6 md:col-span-5 md:row-span-2 overflow-hidden">
-          <img src="img/live-nebula.jpg" alt="D4MON no Nebula Festival" loading="lazy" class="aspect-[1/1.45] h-full w-full object-cover hover:scale-105 transition duration-700" />
+          <img src="img/gallery/live-nebula-1.jpg" alt="D4MON no Nebula Festival" loading="lazy" class="aspect-[1/1.45] h-full w-full object-cover hover:scale-105 transition duration-700" />
         </div>
 
         <div class="col-span-6 flex flex-col justify-end md:col-span-7 md:pl-10">
@@ -225,13 +225,13 @@
 
         <div class="col-span-3 md:col-span-3">
           <div class="hellglow relative aspect-[3/4] bg-ash overflow-hidden">
-            <img src="img/cutout-orbs.webp" alt="D4MON com dois orbes de fogo" loading="lazy" class="h-full w-full object-cover hover:scale-105 transition duration-700" />
+            <img src="img/gallery/vessel-horns.png" alt="O receptáculo com chifres em chamas" loading="lazy" class="h-full w-full object-cover hover:scale-105 transition duration-700" />
           </div>
         </div>
 
         <div class="col-span-3 md:col-span-4">
           <a class="group relative block h-full overflow-hidden" href="gallery.html">
-            <img src="img/live-psychollusion-1.jpg" alt="D4MON no mixer" loading="lazy" class="h-full min-h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+            <img src="img/gallery/live-psychollusion-22.png" alt="D4MON com máscara de LEDs vermelhos" loading="lazy" class="h-full min-h-full w-full object-cover transition duration-700 group-hover:scale-105" />
             <span class="absolute inset-0 flex items-end bg-void/40 p-5 opacity-100 transition group-hover:bg-blood/50">
               <span class="label inline-flex items-center gap-2 !text-bone">
                 <span data-i18n="galleryPreview.openArchive">Abrir o acervo</span>
