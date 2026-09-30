@@ -278,7 +278,7 @@ const translations = {
 const galleryItems = [
   {
     id: "01",
-    img: "img/gallery/live-psychollusion-22.png",
+    img: "img/gallery/live-psychollusion-22.webp",
     category: "decks",
     alt: {
       pt: "D4MON em close-up no palco do Psychollusion com máscara respiratória e LEDs vermelhos acesos",
@@ -291,7 +291,7 @@ const galleryItems = [
   },
   {
     id: "02",
-    img: "img/gallery/live-nebula-1.jpg",
+    img: "img/gallery/live-nebula-1.webp",
     category: "decks",
     alt: {
       pt: "D4MON operando a mesa de som no Festival Nebula imerso em névoa e luzes quentes",
@@ -304,7 +304,7 @@ const galleryItems = [
   },
   {
     id: "03",
-    img: "img/gallery/live-highloween-1.jpg",
+    img: "img/gallery/live-highloween-1.webp",
     category: "rituals",
     alt: {
       pt: "Visão aberta do ritual no Highloween com público em transe sob as tendas",
@@ -317,7 +317,7 @@ const galleryItems = [
   },
   {
     id: "04",
-    img: "img/gallery/fx-entity-1.png",
+    img: "img/gallery/fx-entity-1.webp",
     category: "portraits",
     alt: {
       pt: "Ensaio oficial FX de D4MON envolto em chamas biomecânicas",
@@ -330,7 +330,7 @@ const galleryItems = [
   },
   {
     id: "05",
-    img: "img/gallery/live-psychollusion-1.jpg",
+    img: "img/gallery/live-psychollusion-1.webp",
     category: "decks",
     alt: {
       pt: "D4MON manipulando equalizadores e filtros em performance intensa no Psychollusion",
@@ -343,7 +343,7 @@ const galleryItems = [
   },
   {
     id: "06",
-    img: "img/gallery/vessel-horns.png",
+    img: "img/gallery/vessel-horns.webp",
     category: "portraits",
     alt: {
       pt: "Retrato translúcido do receptáculo de D4MON com chifres em chamas e tubos de respiração",
@@ -356,7 +356,7 @@ const galleryItems = [
   },
   {
     id: "07",
-    img: "img/gallery/live-stage-9443.jpg",
+    img: "img/gallery/live-stage-9443.webp",
     category: "rituals",
     alt: {
       pt: "Perspectiva lateral da cabine de comando musical com iluminação cênica de terror psicodélico",
@@ -369,7 +369,7 @@ const galleryItems = [
   },
   {
     id: "08",
-    img: "img/gallery/fx-entity-2.png",
+    img: "img/gallery/fx-entity-2.webp",
     category: "portraits",
     alt: {
       pt: "D4MON imerso em névoa vulcânica com olhos da máscara emanando raio rubro",
@@ -382,7 +382,7 @@ const galleryItems = [
   },
   {
     id: "09",
-    img: "img/gallery/live-stage-9449.jpg",
+    img: "img/gallery/live-stage-9449.webp",
     category: "decks",
     alt: {
       pt: "D4MON no ápice do set interagindo com os graves estrondosos no palco",
@@ -395,7 +395,7 @@ const galleryItems = [
   },
   {
     id: "10",
-    img: "img/gallery/fx-entity-3.png",
+    img: "img/gallery/fx-entity-3.webp",
     category: "portraits",
     alt: {
       pt: "Postura imponente de D4MON com capuz negro e máscara em alta definição",
@@ -408,7 +408,7 @@ const galleryItems = [
   },
   {
     id: "11",
-    img: "img/gallery/vessel-portrait.png",
+    img: "img/gallery/vessel-portrait.webp",
     category: "portraits",
     alt: {
       pt: "Retrato frontal detalhado da máscara respiratória industrial com LEDs vermelhos",
@@ -421,7 +421,7 @@ const galleryItems = [
   },
   {
     id: "12",
-    img: "img/gallery/artwork-wallpaper.png",
+    img: "img/gallery/artwork-wallpaper.webp",
     category: "rituals",
     alt: {
       pt: "Arte visual oficial de D4MON 2 Time para projeção de telão e cenografia",
